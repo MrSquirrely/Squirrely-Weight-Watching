@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,23 +12,23 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WeightWatching.Properties;
 
-namespace WeightWatching {
+namespace WeightWatching.Views {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Login.xaml
     /// </summary>
-    public partial class MainWindow {
-        public MainWindow() {
+    public partial class Login : Page {
+        public Login() {
             InitializeComponent();
 
-            if (!Directory.Exists("Users")) {
-                Directory.CreateDirectory("Users");
-            }
+            Utilities.LoginContentView = LoginBox;
+        }
 
-            Utilities.MainViewWindow = this;
+        private void Login_OnLoaded(object sender, RoutedEventArgs e) {
+            LoginBox.Width = ActualWidth / 2;
+            LoginBox.Height = (ActualHeight / 2) + (ActualHeight / 2) / 2;
 
-            Content = Settings.Default.Autologin ? (object) new Views.MainPage() : new Views.Login();
+            LoginBox.Content = new LoginContent();
         }
     }
 }
