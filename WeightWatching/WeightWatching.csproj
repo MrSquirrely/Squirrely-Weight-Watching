@@ -185,6 +185,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SquirrelyLogging\SquirrelyLogging.csproj">
+      <Project>{e9738bcd-92b9-48d7-ae5c-f5f21158a6ae}</Project>
+      <Name>SquirrelyLogging</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WeightAPI\WeightAPI.csproj">
       <Project>{ae70699d-4e2a-4932-bb56-2fc68c770523}</Project>
       <Name>WeightAPI</Name>

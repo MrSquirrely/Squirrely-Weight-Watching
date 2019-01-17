@@ -9,16 +9,16 @@ namespace WeightWatching {
 
         /*
          * Here is where I am going to add things I need to do or want to do.
-         *  Todo: Add basic encryption.
-         *  Todo: Add localization
-         *  Todo: Add calorie counting "Meal Tracker"
-         *  Todo: Add exercising routines
-         *  Todo: Add healthy recipes
-         *  Todo: See if you can make the login a popup
-         *  Todo: Use Material Design Extensions to create a wizard
-         *  Todo: Figure out validation
-         *  Todo: Add enter recognition
-         *  Todo: Add logging
+         * Things marked with a '1' are important. Things marked with '2' are not.
+         *  Todo: Add basic encryption. '2' ||
+         *  Todo: Add localization '2' ||
+         *  Todo: Add calorie counting "Meal Tracker" '2' ||
+         *  Todo: Add exercising routines '2' ||
+         *  Todo: Add healthy recipes '2' ||
+         *  Todo: See if you can make the login a popup '2' ||
+         *  Todo: Use Material Design Extensions to create a wizard '2' ||
+         *  Todo: Figure out validation '1' ||
+         *  Todo: Add logging '1' ||
          */
 
     }
