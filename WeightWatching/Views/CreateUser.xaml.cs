@@ -31,6 +31,10 @@ namespace WeightWatching.Views {
 
             WeightTextBox.Width = size;
             AgeTextBox.Width = size;
+            //BMITextBox.Width
+
+            TargetWeightTextBox.Width = size;
+            //TargetBMITextBox.Width = size;
 
             LoginButton.Width = size;
             CreateButton.Width = size;

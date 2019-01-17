@@ -15,7 +15,7 @@
             materialDesign:HintAssist.Hint="Name"
             Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
             Height="60" Margin="10,10,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-            <TextBox 
+        <TextBox 
             Name="UserNameTextBox"
             materialDesign:HintAssist.Hint="User Name"
             Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
@@ -41,6 +41,12 @@
 
         <Button Name="LoginButton" Content="Login" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Height="50" Width="75" Click="LoginButton_OnClick"/>
         <Button Name="CreateButton" Content="Create" HorizontalAlignment="right" Margin="0,0,10,10" VerticalAlignment="Bottom" Height="50" Width="75" Click="CreateButton_OnClick"/>
+        <TextBox 
+            x:Name="TargetWeightTextBox"
+            materialDesign:HintAssist.Hint="Target Weight"
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            HorizontalAlignment="Left" Height="60" Margin="10,270,0,0" 
+            TextWrapping="Wrap" VerticalAlignment="Top" Width="60" PreviewTextInput="IsANumber"/>
 
     </Grid>
 </UserControl>

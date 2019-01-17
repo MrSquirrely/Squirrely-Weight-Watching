@@ -33,17 +33,26 @@ namespace WeightWatching.Views {
             CreateAccountButton.Width = size;
         }
 
-        private void LoginButton_OnClick(object sender, RoutedEventArgs e) {
+        private void LoginButton_OnClick(object sender, RoutedEventArgs e) => Login();
+
+        private void Login() {
             if (!AccountGetter.GetAccount(UsernameField.Text)) {
                 DialogBox.Show("User Doesn't Exists", "Cannot find user! Please try again!", "Okay");
                 return;
             }
             Utilities.MainViewWindow.Content = new MainPage();
+            Utilities.UserNameText.Text = UsernameField.Text;
         }
 
         private void CreateAccountButton_OnClick(object sender, RoutedEventArgs e) {
             Utilities.LoginContentView.Header = "Create Account";
             Utilities.LoginContentView.Content = new CreateUser();
+        }
+
+        private void TextField_OnKeyDown(object sender, KeyEventArgs e) {
+            if (e.Key == Key.Enter) {
+                Login();
+            }
         }
     }
 }

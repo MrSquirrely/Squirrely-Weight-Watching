@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:WeightWatching"
         mc:Ignorable="d"
         xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Background="{DynamicResource MaterialDesignPaper}"
         TextElement.FontWeight="Medium"
@@ -13,6 +14,23 @@
         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
 
         Title="Mr. Squirrely's Weight Watching" Height="720" Width="1280">
+
+    <metro:MetroWindow.RightWindowCommands>
+        <metro:WindowCommands>
+            <Button>
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="SettingsOutline" Height="24" Width="24" />
+                    <TextBlock Margin="4 0 0 0" VerticalAlignment="Center" Text="Settings"/>
+                </StackPanel>
+            </Button>
+            <Button>
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="AccountCircleOutline" Height="24" Width="24" />
+                    <TextBlock Name="UserNameTextBlock" Margin="4 0 0 0" VerticalAlignment="Center" Text="" />
+                </StackPanel>
+            </Button>
+        </metro:WindowCommands>
+    </metro:MetroWindow.RightWindowCommands>
     <Grid>
         
     </Grid>

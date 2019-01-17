@@ -25,7 +25,7 @@ namespace WeightAPI {
                 File.WriteAllText("default.settings", JsonConvert.SerializeObject(_defaultSettings));
             }
             catch (Exception ex) {
-
+                Console.WriteLine(ex);
             }
         }
 

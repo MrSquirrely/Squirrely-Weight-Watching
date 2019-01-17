@@ -13,7 +13,7 @@
     <Grid>
         <!-- dragablz:TabablzControl -->
         <!-- TabControl -->
-        <TabControl>
+        <dragablz:TabablzControl>
             <TabItem Header="Weight Tracker" Name="WeightTracker">
             </TabItem>
             <TabItem Header="Daily Food Intake" Name="FoodIntake">
@@ -30,7 +30,7 @@
             </TabItem>
             <TabItem Header="About" Name="About">
             </TabItem>
-        </TabControl>
+        </dragablz:TabablzControl>
 
     </Grid>
 </Page>

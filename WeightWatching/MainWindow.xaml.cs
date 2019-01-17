@@ -28,6 +28,7 @@ namespace WeightWatching {
             }
 
             Utilities.MainViewWindow = this;
+            Utilities.UserNameText = UserNameTextBlock;
 
             Content = Settings.Default.Autologin ? (object) new Views.MainPage() : new Views.Login();
         }

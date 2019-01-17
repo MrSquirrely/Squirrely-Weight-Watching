@@ -16,6 +16,9 @@ namespace WeightWatching {
          *  Todo: Add healthy recipes
          *  Todo: See if you can make the login a popup
          *  Todo: Use Material Design Extensions to create a wizard
+         *  Todo: Figure out validation
+         *  Todo: Add enter recognition
+         *  Todo: Add logging
          */
 
     }
